@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.vscode/
+.env
+venv/
+udpp_output/
+*.ipynb_checkpoints
+.venv311/
