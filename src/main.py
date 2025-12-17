@@ -15,7 +15,7 @@ from .config import BASE_OUTPUT
 
 def main(data, target=None, output=None):
     output = output or BASE_OUTPUT
-    ensure_dir(output)
+    ensure_dir(output) 
 
     # 1) load
     df, name = read_data(data)
