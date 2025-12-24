@@ -6,7 +6,7 @@ Usage:
 """
 import argparse  
 import os 
-from .utils import read_data, ensure_dir
+from .utils import read_data, ensure_dir 
 from .preprocess import preprocess_dataframe, build_preprocessor, detect_column_types
 from .models import get_model_candidates
 from .trainer import Trainer
