@@ -4,7 +4,7 @@ Main entrypoint for the UDPP project.
 Usage:
     python -m src.main --data data/regression.csv --target price
 """
-import argparse   
+import argparse    
 import os 
 from .utils import read_data, ensure_dir 
 from .preprocess import preprocess_dataframe, build_preprocessor, detect_column_types
@@ -13,7 +13,7 @@ from .trainer import Trainer
 from .evaluate import evaluate_model
 from .config import BASE_OUTPUT
 
-def main(data, target=None, output=None):
+def main(data, target=None, output=None): 
     output = output or BASE_OUTPUT 
     ensure_dir(output)  
 
