@@ -75,5 +75,5 @@ if __name__ == "__main__":
     parser.add_argument("--data", type=str, required=True, help="Path to CSV or Excel dataset")
     parser.add_argument("--target", type=str, default=None, help="Target column name (optional)")
     parser.add_argument("--output", type=str, default=None, help="Output folder (optional)")
-    args = parser.parse_args()
+    args = parser.parse_args() 
     main(args.data, target=args.target, output=args.output)
