@@ -25,7 +25,7 @@ def main(data, target=None, output=None):
     if target is None:
         # choose last column (simple fallback)
         target = df.columns[-1]
-        print(f"[WARN] No --target passed. Using last column: {target}")
+        print(f"[WARN] No --target passed. Using last column: {target}") 
     else:
         if target not in df.columns:
             raise ValueError(f"Target column '{target}' not found in dataset columns: {list(df.columns)}")
