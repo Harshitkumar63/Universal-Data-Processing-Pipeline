@@ -46,7 +46,7 @@ def main(data, target=None, output=None):
         task = "classification"
     else:
         task = "regression"
-    print(f"[INFO] Detected task: {task}")
+    print(f"[INFO] Detected task: {task}") 
 
     # 6) get model candidates
     models = get_model_candidates(task=task)
