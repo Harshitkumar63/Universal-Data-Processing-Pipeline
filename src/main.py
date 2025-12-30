@@ -71,7 +71,7 @@ def main(data, target=None, output=None):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UDPP - Universal Data Processing Pipeline")
+    parser = argparse.ArgumentParser(description="UDPP - Universal Data Processing Pipeline") 
     parser.add_argument("--data", type=str, required=True, help="Path to CSV or Excel dataset")
     parser.add_argument("--target", type=str, default=None, help="Target column name (optional)")
     parser.add_argument("--output", type=str, default=None, help="Output folder (optional)")
