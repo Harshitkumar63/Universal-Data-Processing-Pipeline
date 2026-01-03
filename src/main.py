@@ -49,7 +49,7 @@ def main(data, target=None, output=None):
     print(f"[INFO] Detected task: {task}") 
 
     # 6) get model candidates
-    models = get_model_candidates(task=task)
+    models = get_model_candidates(task=task) 
 
     # 7) train & select
     dataset_output = os.path.join(output, name)
