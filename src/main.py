@@ -33,7 +33,7 @@ def main(data, target=None, output=None):
     # 3) basic type detection and preprocessing
     types = detect_column_types(df.drop(columns=[target]))
     datetime_cols = types.get("datetime", None)
-    processed_df, numeric, categorical = preprocess_dataframe(df, datetime_cols=datetime_cols)
+    processed_df, numeric, categorical = preprocess_dataframe(df, datetime_cols=datetime_cols) 
     features = numeric + categorical
     print(f"[INFO] Features count: {len(features)} (numeric={len(numeric)}, categorical={len(categorical)})")
 
