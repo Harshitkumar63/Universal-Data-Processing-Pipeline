@@ -31,7 +31,7 @@ def main(data, target=None, output=None):
             raise ValueError(f"Target column '{target}' not found in dataset columns: {list(df.columns)}")
 
     # 3) basic type detection and preprocessing
-    types = detect_column_types(df.drop(columns=[target]))
+    types = detect_column_types(df.drop(columns=[target])) 
     datetime_cols = types.get("datetime", None)
     processed_df, numeric, categorical = preprocess_dataframe(df, datetime_cols=datetime_cols) 
     features = numeric + categorical
