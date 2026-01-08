@@ -11,7 +11,7 @@ from .preprocess import preprocess_dataframe, build_preprocessor, detect_column_
 from .models import get_model_candidates
 from .trainer import Trainer
 from .evaluate import evaluate_model
-from .config import BASE_OUTPUT
+from .config import BASE_OUTPUT 
 
 def main(data, target=None, output=None): 
     output = output or BASE_OUTPUT 
