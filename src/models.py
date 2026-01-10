@@ -11,7 +11,7 @@ try:
 except Exception:
     LGBMRegressor = LGBMClassifier = None
 
-def get_model_candidates(task="regression"):
+def get_model_candidates(task="regression"): 
     """
     Returns dict of model_name -> model_instance (basic candidates).
     Add or remove as needed.
