@@ -38,7 +38,7 @@ def main(data, target=None, output=None):
     print(f"[INFO] Features count: {len(features)} (numeric={len(numeric)}, categorical={len(categorical)})")
 
     # 4) build preprocessor
-    preprocessor = build_preprocessor(processed_df, numeric, categorical) 
+    preprocessor = build_preprocessor(processed_df, numeric, categorical)  
 
     # 5) detect task
     target_ser = processed_df[target]
