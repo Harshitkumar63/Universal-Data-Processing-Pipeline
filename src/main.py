@@ -22,7 +22,7 @@ def main(data, target=None, output=None):
     print(f"[INFO] Loaded {name} shape={df.shape}") 
 
     # 2) detect target
-    if target is None:
+    if target is None: 
         # choose last column (simple fallback)
         target = df.columns[-1]
         print(f"[WARN] No --target passed. Using last column: {target}") 
