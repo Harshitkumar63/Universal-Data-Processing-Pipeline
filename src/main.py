@@ -18,7 +18,7 @@ def main(data, target=None, output=None):
     ensure_dir(output)  
 
     # 1) load
-    df, name = read_data(data)
+    df, name = read_data(data) 
     print(f"[INFO] Loaded {name} shape={df.shape}") 
 
     # 2) detect target
