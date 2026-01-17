@@ -52,7 +52,7 @@ def main(data, target=None, output=None):
     models = get_model_candidates(task=task) 
 
     # 7) train & select
-    dataset_output = os.path.join(output, name)
+    dataset_output = os.path.join(output, name) 
     ensure_dir(dataset_output)
     trainer = Trainer(processed_df, features, target, task, preprocessor, output_dir=dataset_output)
     result = trainer.train_and_select(models)
