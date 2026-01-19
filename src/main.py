@@ -43,7 +43,7 @@ def main(data, target=None, output=None):
     # 5) detect task
     target_ser = processed_df[target]
     if target_ser.dtype == 'object' or target_ser.nunique() <= 20:  
-        task = "classification"
+        task = "classification" 
     else:
         task = "regression"
     print(f"[INFO] Detected task: {task}") 
