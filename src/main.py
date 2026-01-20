@@ -19,7 +19,7 @@ def main(data, target=None, output=None):
 
     # 1) load
     df, name = read_data(data) 
-    print(f"[INFO] Loaded {name} shape={df.shape}") 
+    print(f"[INFO] Loaded {name}  shape={df.shape}") 
 
     # 2) detect target
     if target is None: 
