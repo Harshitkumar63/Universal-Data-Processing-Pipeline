@@ -53,7 +53,7 @@ def main(data, target=None, output=None):
 
     # 7) train & select
     dataset_output = os.path.join(output, name) 
-    ensure_dir(dataset_output)
+    ensure_dir(dataset_output) 
     trainer = Trainer(processed_df, features, target, task, preprocessor, output_dir=dataset_output)
     result = trainer.train_and_select(models)
     print(f"[INFO] Training finished. Best model: {result['best_model_name']}")
