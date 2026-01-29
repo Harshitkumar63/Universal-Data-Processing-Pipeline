@@ -24,7 +24,7 @@ def main(data, target=None, output=None):
     # 2) detect target
     if target is None: 
         # choose last column (simple fallback)
-        target = df.columns[-1]
+        target = df.columns[-1] 
         print(f"[WARN] No --target passed. Using last column: {target}") 
     else:
         if target not in df.columns:
